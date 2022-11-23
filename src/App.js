@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
+        <Route  path='/' element={<p>asdf</p>} />
         <Route path='/user-form' element={<Form />} />
         <Route path='/submitted' element={<Submitted />} />
       </Routes>
