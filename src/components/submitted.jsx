@@ -10,7 +10,7 @@ function Submitted(){
     const location = useLocation()
 
     useEffect( () => {
-        axios.get('http://localhost:3001/read-forms')
+        axios.get('https://stackfusionserver.herokuapp.com/read-forms')
         .then((response) => {
             // console.log(response.data)
             setForms(response.data)

@@ -13,7 +13,7 @@ function Form(){
     } = useForm()
 
     function onSubmit(data){
-        axios.post('http://localhost:3001/save-data', data)
+        axios.post('https://stackfusionserver.herokuapp.com/save-data', data)
         .then((response) => {
             if(response.status === 200){
                 navigate('/submitted')
