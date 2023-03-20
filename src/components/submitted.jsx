@@ -3,11 +3,43 @@ import React from "react"
 // import { useLocation } from "react-router-dom"
 // import FormCard from "./formCard"
 // import Grid from '@mui/material/Grid'
+// import InstagramIcon from '@mui/icons-material/Instagram'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 function Submitted(){
     return (
-        <div className="form-card">
-            hello
+        <div>
+            <div className="social">
+                <div>Whatsapp</div>
+                <span>weekly usage : 07h 53m</span>
+            </div>
+            <div className="social">
+                <div>Instagram</div>
+                <span>weekly usage : 05h 42m</span>
+            </div>
+            <div className="social">
+                <div>Facebook</div>
+                <span>weekly usage : 06h 30m</span>
+            </div>
+            <div className="social">
+                <div>Reddit</div>
+                <span>weekly usage : 04h 0m</span>
+            </div>
+
+            <div className="social">
+                <div>Call time</div>
+                <span>Weekly Talktime : 08h 07m</span>
+            </div>
+
+            <div className="social">
+                <div>Screen On-time</div>
+                <span>Weekly Usage : 53h 23m</span>
+            </div>
+            <div className="social">
+                <div>Google play Apps</div>
+                <span>weekly Usage : 12h 33m</span>
+            </div>
         </div>
     )
 

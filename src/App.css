@@ -145,3 +145,13 @@ button {
 .form-card p::before {
   display: none;
 }
+
+.social{
+  color: aliceblue;
+  text-align: center;
+}
+
+.social div{
+  color: rgb(238, 148, 148);
+  margin: 20px;
+}
