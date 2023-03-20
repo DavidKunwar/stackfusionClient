@@ -1,6 +1,6 @@
 import React from 'react'
 import { useForm } from "react-hook-form"
-import axios from 'axios'
+// import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
 function Form(){
@@ -13,15 +13,16 @@ function Form(){
     } = useForm()
 
     function onSubmit(data){
-        axios.post('https://stackfusionserver.herokuapp.com/save-data', data)
-        .then((response) => {
-            if(response.status === 200){
-                navigate('/submitted')
-            }
-        }).catch((error) => {
-            console.log(error)
-        })
-        console.log(data)
+        navigate('/submitted')
+        // axios.post('http://localhost:3001/save-data', data)
+        // .then((response) => {
+        //     if(response.status === 200){
+        //         navigate('/submitted')
+        //     }
+        // }).catch((error) => {
+        //     console.log(error)
+        // })
+        // console.log(data)
     }
 
     return (
@@ -39,7 +40,7 @@ function Form(){
                 <input {...register('phoneNumber', {required : 'This is a required field.'})} type='tel' placeholder='Phone No.' pattern='[0-9]{10}' />
                 {errors.phoneNumber && <p>{errors.phoneNumber.message}</p> }
                 
-                <label>Date of Birth</label>
+                {/* <label>Date of Birth</label>
                 <input {
                     ...register('dob',
                     {
@@ -51,13 +52,13 @@ function Form(){
                     
                     )}
                     type='date' placeholder='DoB'
-                />
-                {errors.dob && errors.dob.type === 'underAge' && (
+                /> */}
+                {/* {errors.dob && errors.dob.type === 'underAge' && (
                     <p>You must be older than 18.</p>
                 )}
                 {errors.dob && errors.dob.type !== 'underAge' && (
                     <p>{errors.dob.message}</p>
-                )}
+                )} */}
 
                 <input type='submit' />
             </form>
