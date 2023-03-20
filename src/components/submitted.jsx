@@ -4,7 +4,7 @@ import React from "react"
 // import FormCard from "./formCard"
 // import Grid from '@mui/material/Grid'
 // import InstagramIcon from '@mui/icons-material/Instagram'
-'
+
 
 function Submitted(){
     return (
